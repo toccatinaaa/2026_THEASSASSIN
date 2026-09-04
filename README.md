@@ -31,6 +31,6 @@
 ###### E. 3Dモデルのアニメーション制御（Blend Treeによる移動遷移、Animatorレイヤーの分離、またはIKによるGrounding/LookAtなど）
     
     StateMachineデザインパターンを使い、Animationを細かく分けました。
-    Animationの遷移はBoolで分けており、各ステートに入った際(Enter)にboolをtrueに、出た時(Exit)にして制御しています。
+    Animationの遷移はBoolで分けており、各ステートに入った際boolをtrueに、出た時falseにして制御しています。
     弓は引きはじめ、引いてホールドするIdle、撃った時の三つで分かれています。
     落下するとFallingになり、着地するとLandingからIdleに遷移します。
